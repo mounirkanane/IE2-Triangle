@@ -14,6 +14,7 @@ class TriangleTest(unittest.TestCase):
 
     def test_scalene_triangle(self):
         self.assertEqual(Triangle.classify(3, 4, 5), Triangle.Type.SCALENE)
+        self.assertEqual(Triangle.classify(1, 1, 3), Triangle.Type.SCALENE)
 
     def test_equilateral_triangle(self):
         self.assertEqual(Triangle.classify(3, 3, 3), Triangle.Type.EQUILATERAL)
